@@ -1,5 +1,5 @@
 // Iteration 1: Names and Input
-
+//1.1, 1.2, 1.3, 1.4:
 let hacker1 = "Mohammed";
 console.log(`The driver's name is ${hacker1}`);
 
@@ -8,6 +8,7 @@ console.log(`The navigator's name is ${hacker2}`);
 //
 
 // Iteration 2: Conditionals
+//2.1
 let lenOfhacker1 = hacker1.length;
 let lenOfhacker2 = hacker2.length;
 
@@ -25,3 +26,15 @@ if (lenOfhacker1 > lenOfhacker2) {
   );
 }
 // Iteration 3: Loops
+//3.1
+const newString = hacker1.toLocaleUpperCase();
+console.log(newString);
+let result = "";
+for (let idx = 0; idx < newString.length; idx++) {
+  if (idx != newString.length - 1) {
+    result = result + newString[idx] + " ";
+  } else {
+    result = result + newString[idx];
+  }
+}
+console.log(`"${result}"`);
