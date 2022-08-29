@@ -26,12 +26,7 @@ Ready?
 
   
 
-For this **pair-programming** activity we are going to have both people in the pair work in their own repos.
-
-At the end of the exercise, both students should have identical code in their respective repos.
-
-  
-
+ 
 Ready to start?
 
   
