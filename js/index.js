@@ -28,7 +28,6 @@ if (lenOfhacker1 > lenOfhacker2) {
 // Iteration 3: Loops
 //3.1
 const newString = hacker1.toLocaleUpperCase();
-console.log(newString);
 let result = "";
 for (let idx = 0; idx < newString.length; idx++) {
   if (idx != newString.length - 1) {
@@ -38,3 +37,10 @@ for (let idx = 0; idx < newString.length; idx++) {
   }
 }
 console.log(`"${result}"`);
+
+//3.2
+let revStr = "";
+for (let idx = hacker2.length - 1; idx >= 0; idx--) {
+  revStr = revStr + hacker2[idx];
+}
+console.log(`"${revStr}"`);
