@@ -66,8 +66,24 @@ Curabitur ultrices facilisis turpis, eu viverra nunc rhoncus quis. Aenean gravid
 
 Donec tempor, diam vel dapibus fringilla, justo mi consectetur eros, vitae commodo ligula diam a ante. Sed porttitor arcu neque, ut aliquam ligula bibendum quis. Duis quis odio vel neque cursus malesuada id eu sapien. Vestibulum hendrerit dapibus nulla, mollis blandit odio malesuada ac. Nullam pellentesque, mi accumsan aliquet consequat, eros elit pharetra enim, a mollis dolor nisi quis augue. Etiam at tellus sed mauris iaculis porta. Aliquam metus augue, ultrices a dolor eu, auctor rutrum elit. Vestibulum aliquet est quis mollis tristique. Proin pulvinar varius dignissim. Aenean in augue et purus auctor pharetra quis rhoncus velit.`;
 
+let results1;
 let countWords = givenString => {
-  return givenString.split(" ").length;
+  results1 = givenString.split(" ");
+  return results1;
 };
 
-console.log(countWords(loremStrPara));
+let resultArrayOfWords = countWords(loremStrPara);
+let numberOfWords = resultArrayOfWords.length;
+console.log(`Number of words in a given string: ${numberOfWords}`);
+
+let etWordCountInAllWords = 0;
+for (let idx = 0; idx <= numberOfWords; idx++) {
+  if (
+    resultArrayOfWords[idx] === "et" ||
+    resultArrayOfWords[idx] === "et," ||
+    resultArrayOfWords[idx] === "et."
+  ) {
+    etWordCountInAllWords++;
+  }
+}
+console.log(etWordCountInAllWords);
