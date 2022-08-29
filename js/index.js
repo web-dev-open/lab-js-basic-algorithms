@@ -3,7 +3,7 @@
 let hacker1 = "Mohammed";
 console.log(`The driver's name is ${hacker1}`);
 
-let hacker2 = "Manish";
+let hacker2 = "Irfan";
 console.log(`The navigator's name is ${hacker2}`);
 //
 
@@ -44,3 +44,16 @@ for (let idx = hacker2.length - 1; idx >= 0; idx--) {
   revStr = revStr + hacker2[idx];
 }
 console.log(`"${revStr}"`);
+
+//3.3:
+//Reference: https://masteringjs.io/tutorials/fundamentals/compare-strings
+
+hacker1 = hacker1.toLowerCase();
+hacker2 = hacker2.toLowerCase();
+if (hacker1 > hacker2) {
+  console.log(`The driver's name goes first.`);
+} else if (hacker2 > hacker1) {
+  console.log(`Yo, the navigator goes first definitely.`);
+} else {
+  console.log(`What?! You both have the same name?`);
+}
