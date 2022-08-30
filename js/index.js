@@ -87,3 +87,10 @@ for (let idx = 0; idx <= numberOfWords; idx++) {
   }
 }
 console.log(etWordCountInAllWords);
+
+//Bonus-2:
+
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+let phraseToCheck1 = phraseToCheck.split(" ");
+console.log(phraseToCheck1);
+for(let idx = 0; idx < phraseToCheck1.length; cd)
