@@ -1,7 +1,7 @@
-console.log("I'm ready!");
+console.log('This works with Node!')
 
 // Iteration 1: Names and Input
-let hacker1  = 'Manish'
+
 
 //
 // Iteration 2: Conditionals
