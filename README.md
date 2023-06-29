@@ -1,4 +1,5 @@
-![Root Logo](https://imgur.com/XOS1Vdh.png)
+
+<img src="https://imgur.com/XOS1Vdh.png"  width="50px" height="50px">
 
   
 
