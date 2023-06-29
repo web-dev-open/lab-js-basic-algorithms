@@ -7,7 +7,7 @@
 
  
 
-Welcome to your first bootcamp exercise at Root Learn!
+Welcome to your first bootcamp exercise at Open Bootcamp!
 
   
 
