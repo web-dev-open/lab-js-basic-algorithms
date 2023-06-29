@@ -1,4 +1,4 @@
-![Root Logo](https://imgur.com/np0rofN.png)
+![Root Logo](https://imgur.com/XOS1Vdh.png)
 
   
 
