@@ -81,7 +81,7 @@ $ git push origin master
 
 ```
 
-Create Pull Request so your TAs can check up your work.
+Create Pull Request so that we can check your work. Not all assignments are meant to be reviewed but expect us to randomly review few and give you feedback.
 
   
 
