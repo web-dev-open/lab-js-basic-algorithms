@@ -22,9 +22,11 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+const driverName = "John";
 const driverNameCapitalized = driverName.toUpperCase().split("").join(" ");
 console.log(driverNameCapitalized);
 
+const navigatorName = "John";
 const navigatorNameReversed = navigatorName.split("").reverse().join("");
 console.log(navigatorNameReversed);
 
