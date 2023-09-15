@@ -60,3 +60,46 @@ for (let i = 0; i < loremArray.length; i++) {
 }
 
 console.log(wordCount);
+
+
+// Bonus 2
+const phraseToCheck = 'No \'x\' in Nixon';
+let reversedPhrase = '';
+let phraseWithoutSpaces = '';
+for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+  if (phraseToCheck[i] === ' ') {
+    continue;
+  } else if (phraseToCheck[i] === ',') {
+    continue;
+  } else if (phraseToCheck[i] === '!') {
+    continue;
+  } else if (phraseToCheck[i] === '.') {
+    continue;
+  } else if (phraseToCheck[i] === '?') {
+    continue;
+  } else if (phraseToCheck[i] === '\'') {
+    continue;
+  } else {
+    reversedPhrase += phraseToCheck[i].toLowerCase();
+  }
+}
+for (let i = 0; i < phraseToCheck.length; i++) {
+  if (phraseToCheck[i] === ' ') {
+    continue;
+  } else if (phraseToCheck[i] === ',') {
+    continue;
+  } else if (phraseToCheck[i] === '!') {
+    continue;
+  } else if (phraseToCheck[i] === '.') {
+    continue;
+  } else if (phraseToCheck[i] === '?') {
+    continue;
+  } else if (phraseToCheck[i] === '\'') {
+    continue;
+  } else {
+    phraseWithoutSpaces += phraseToCheck[i].toLowerCase();
+  }
+}
+const isPalindrome = phraseWithoutSpaces === reversedPhrase;
+console.log(phraseWithoutSpaces, reversedPhrase);
+console.log(isPalindrome);
