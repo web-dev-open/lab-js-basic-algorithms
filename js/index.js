@@ -39,3 +39,48 @@ else if (hacker2 > hacker1)
     console.log('Yo, the navigator goes first definitely.');
 else
     console.log('What?! You both have the same name?');
+
+
+//Bonus 1
+const paragraph = `
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+Ut, laudantium quasi. Hic exercitationem quia accusantium 
+repudiandae delectus iure sit corrupti fugiat. Aperiam molestiae 
+facere iure voluptates quaerat, modi doloribus itaque.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Pariatur eligendi et corrupti facere ab quo odit magnam asperiores velit necessitatibus? 
+Enim mollitia incidunt saepe eos culpa sed excepturi alias id.
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+Ut, laudantium quasi. Hic exercitationem quia accusantium 
+repudiandae delectus iure sit corrupti fugiat. Aperiam molestiae 
+facere iure voluptates quaerat, modi doloribus itaque.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Pariatur eligendi et corrupti facere ab quo odit magnam asperiores velit necessitatibus? 
+Enim mollitia incidunt saepe eos culpa sed excepturi alias id.
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+Ut, laudantium quasi. Hic exercitationem quia accusantium 
+repudiandae delectus iure sit corrupti fugiat. Aperiam molestiae 
+facere iure voluptates quaerat, modi doloribus itaque.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Pariatur eligendi et corrupti facere ab quo odit magnam asperiores velit necessitatibus? 
+Enim mollitia incidunt saepe eos culpa sed excepturi alias id.
+`;
+
+//counting number of words in the paragraph
+let wordsInParagraph = paragraph.split(/\s+/);
+let wordCount = wordsInParagraph.length;
+
+
+let searchString = 'et';
+let etCount = 0;
+let position = paragraph.indexOf(searchString);
+
+while (position !== -1){
+    etCount++;
+    position = paragraph.indexOf(searchString, position + 1);
+}
+
+console.log("Word count:", wordCount);
+console.log("The word 'et' occurs " + etCount + " times in the paragraph.");
