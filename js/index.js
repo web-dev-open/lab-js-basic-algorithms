@@ -26,3 +26,17 @@ if (hacker1.length > hacker2.length) {
   
 
 // Iteration 3: Loops
+
+
+// Compare the lexicographic order of the names
+const nameComparison = hacker1.localeCompare(hacker2);
+
+// Print the result based on the comparison
+if (nameComparison < 0) {
+  console.log("The driver's name goes first.");
+} else if (nameComparison > 0) {
+  console.log("Yo, the navigator goes first definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+}
+
