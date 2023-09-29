@@ -84,3 +84,6 @@ while (position !== -1){
 
 console.log("Word count:", wordCount);
 console.log("The word 'et' occurs " + etCount + " times in the paragraph.");
+
+
+//Bonus 2: Palindrome Checker
