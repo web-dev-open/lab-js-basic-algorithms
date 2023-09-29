@@ -87,3 +87,22 @@ console.log("The word 'et' occurs " + etCount + " times in the paragraph.");
 
 
 //Bonus 2: Palindrome Checker
+let phraseToCheck = 'stack cats';
+
+let cleanText = [];
+
+let counter = 0;
+
+while (counter < phraseToCheck.length) {
+    if (phraseToCheck[counter].toLocaleLowerCase() >= 'a' && phraseToCheck[counter].toLocaleLowerCase() <= 'z') {
+        cleanText.push(phraseToCheck[counter].toLocaleLowerCase());
+    }
+    counter++;
+}
+
+let OriginalText = cleanText.join('');
+
+if (OriginalText === cleanText.reverse().join(''))
+    console.log(`"${phraseToCheck}" is a palindrome!`);
+else
+    console.log(`${phraseToCheck} is not a palindrome.`);
