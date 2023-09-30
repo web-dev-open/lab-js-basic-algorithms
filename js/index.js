@@ -4,3 +4,7 @@
 
 
 // Iteration 3: Loops
+
+
+let hacker1 = "Joe Doe";
+console.log()
