@@ -105,11 +105,12 @@ else {
 
         console.log(`there are ${wordCount} words`);
         console.log(`there are ${etWordCount} et words`);
+    
     ////
 
 
-         // Bonus 2: Create a new variable phraseToCheck and have it contain some string value. 
-         // Write a code that will check if the value we assigned to this variable is a Palindrome.
+    // Bonus 2: Create a new variable phraseToCheck and have it contain some string value. 
+    // Write a code that will check if the value we assigned to this variable is a Palindrome.
 
             const phraseToCheck = "step on no pets";
 
@@ -128,7 +129,5 @@ else {
             } else {
                 console.log(phraseToCheck + " is not a palindrome");
             }
-            
-
-
-
+    
+    ////
