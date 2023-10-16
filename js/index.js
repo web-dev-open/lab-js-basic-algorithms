@@ -1,21 +1,21 @@
 // Iteration 1: Names and Input
-var hacker1 = "Milena"
+const hacker1 = "Milena"
 console.log(`The driver's name is ${hacker1}`);
-var hacker2 = "Marilia"
+const hacker2 = "Marilia"
 console.log(`The navigator's name is ${hacker2}`);
 //
 
 // Iteration 2: Conditionals
 if (hacker1.length > hacker2.length) {
-    var nameLength = hacker1.length;
+    const nameLength = hacker1.length;
     console.log(`The driver has the longest name, it has ${nameLength} characters.`)
 }
 else if (hacker2.length > hacker1.length) {
-    var nameLength = hacker2.length;
+    const nameLength = hacker2.length;
     console.log(`It seems that the navigator has the longest name, it has ${nameLength} characters.`)
 }
 else {
-    var nameLength = hacker1.length;
+    const nameLength = hacker1.length;
     console.log(`Wow, you both have equally long names ${nameLength} characters.`)
 };
 
@@ -26,7 +26,7 @@ else {
 
             // var spacedName = hacker1.split('').join(' ').toUpperCase();
 
-        var spacedName = "";
+        let spacedName = "";
 
         for (let i = 0; i < hacker1.length; i++) {
             spacedName += hacker1[i].toUpperCase() + " ";
@@ -40,7 +40,7 @@ else {
 
             // const reversedName = hacker1.split('').reverse().join('');
 
-        var revertedName = "";
+        let revertedName = "";
 
         for (let i = hacker1.length - 1; i >= 0; i--) {
             revertedName += hacker1[i];
@@ -52,10 +52,10 @@ else {
 
     // 3.3 Depending on the lexicographic order of the strings, print:
 
-        if (hacker1 > hacker2) {
+        if (hacker1.toLowerCase() > hacker2.toLowerCase()) {
             console.log("The driver's name goes first.")
         }
-        else if (hacker2 > hacker1) {
+        else if (hacker2.toLowerCase() > hacker1.toLowerCase()) {
             console.log("Yo, the navigator goes first definitely.")
         }
         else {
@@ -72,7 +72,7 @@ else {
         // Make your program count the number of words in the string.
         // Make your program count the number of times the Latin word et appears.
 
-        var dummyText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida metus a pulvinar mattis. 
+        const dummyText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida metus a pulvinar mattis. 
         Aenean ultrices lorem nec velit fringilla tincidunt. Donec cursus tempor luctus. Quisque vel placerat mauris. 
         Aenean laoreet velit commodo, laoreet leo eget, placerat massa. 
         Ut ut ipsum ac ante efficitur blandit. Vivamus vulputate neque ut viverra faucibus. 
@@ -107,19 +107,19 @@ else {
         console.log(`there are ${etWordCount} et words`);
     ////
 
-    
+
          // Bonus 2: Create a new variable phraseToCheck and have it contain some string value. 
          // Write a code that will check if the value we assigned to this variable is a Palindrome.
 
-            var phraseToCheck = "step on no pets";
+            const phraseToCheck = "step on no pets";
 
-            var phraseSplitted = phraseToCheck.split(/\s+/).join("").split('');
+            const phraseSplitted = phraseToCheck.split(/\s+/).join("").split('');
 
-            var isPalindrome = true;
+            let isPalindrome = true;
 
             for (i = 0; i < phraseSplitted.length; i++ ) {
                 if (phraseSplitted[i] !== phraseSplitted[phraseSplitted.length - 1 - i]) {
-                    var isPalindrome = false;
+                    isPalindrome = false;
                 };
             };
 
