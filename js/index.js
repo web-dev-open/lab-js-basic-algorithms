@@ -52,3 +52,21 @@ else if(hacker2 < hacker1) {
 else {
     console.log("What?! You both have the same name?");
 }
+
+// Bonus 1:
+const text = `
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec tristique nibh. Integer tincidunt, ipsum elementum finibus faucibus, ligula arcu lobortis quam, ut mollis ex orci nec augue. Proin venenatis mauris quis scelerisque feugiat. Maecenas rhoncus libero quis tortor tempor dignissim. Etiam tristique nisi eget nisi imperdiet, vitae aliquet nibh hendrerit. Fusce scelerisque lacus eu odio iaculis, a rhoncus mauris interdum. Morbi imperdiet ex vitae ante finibus bibendum. Integer tincidunt aliquet fringilla.
+
+Fusce non laoreet dolor. Proin pulvinar nibh non auctor ullamcorper. Donec id arcu ultrices, consequat mi sollicitudin, molestie metus. Vivamus tincidunt pretium orci, eget ultricies justo vehicula eu. Donec in mattis enim. Nam aliquam tincidunt libero, vitae scelerisque ex placerat eu. Donec lacinia sed ex ac vehicula. Phasellus in quam aliquet felis posuere bibendum. Proin eget orci tristique, egestas tortor et, hendrerit velit. Quisque euismod ornare eros eu varius. Suspendisse orci velit, hendrerit vel mollis vitae, maximus et massa. Etiam ultrices bibendum massa quis fringilla. Nullam quis ultricies tortor. Aenean pretium ut sem ut laoreet. Sed interdum lectus ut posuere laoreet. Proin finibus sed purus quis bibendum.
+
+Nam sit amet ullamcorper nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vitae vulputate lectus. Praesent maximus nisl nisl, et varius nisi aliquet in. Sed vestibulum euismod eros id fringilla. Quisque nec sapien non sapien auctor pretium. Vestibulum tempor facilisis tellus nec scelerisque. Suspendisse viverra vulputate congue. Proin facilisis, leo vel ultricies sollicitudin, lectus nisi congue erat, sit amet consectetur nibh dolor at nunc. In luctus leo vitae arcu placerat, sit amet commodo leo aliquet. Ut dictum lacus nec elit finibus viverra.
+`;
+
+// Count the number of words in the string
+const wordsCount = text.split(/\s+/).length;
+
+// Count the number of times the latin word "et" appears
+const latinWordCount = (text.match(/et/gi) || []).length;
+
+console.log(`Number of words in the Lorem Ipsum text: ${wordsCount}`);
+console.log(`Number of times the Latin word "et" appears: ${latinWordCount}`);
