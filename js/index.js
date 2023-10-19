@@ -3,20 +3,20 @@ console.log("I'm ready!");
 
 // Iteration 1: Names and Input
 
-// Create a variable hacker1 with the driver's name
-const hacker1 = "Sushmitha Sudarshan";
+// 1.1 Create a variable hacker1 with the driver's name
+const hacker1 = "Sushmitha";
 
-// Print "The driver's name is XXXX"
+// 1.2 Print "The driver's name is XXXX"
 console.log(`The driver's name is ${hacker1}`);
 
-//Create a variable hacker2 with the navigator's name
-const hacker2 = "Manish Poduval";
+// 1.3 Create a variable hacker2 with the navigator's name
+const hacker2 = "Manish";
 
-//Print "The navigator's name is YYYY"
+// 1.4 Print "The navigator's name is YYYY"
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
-// Depending on which name is longer, print the appropriate message
+// 2.1 Depending on which name is longer, print the appropriate message
 if(hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 }
@@ -28,3 +28,27 @@ else {
 }
 
 // Iteration 3: Loops
+// 3.1 Print all the characters of the driver's name, separated by a space and in capitals
+let driverNameInCapWithSpaces = '';
+for(let i = 0; i < hacker1.length; i++) {
+    driverNameInCapWithSpaces += hacker1[i].toUpperCase() + ' ';
+}
+console.log(driverNameInCapWithSpaces);
+
+// 3.2 Print all the characters of the navigator's name, in reverse order
+let reverseNavigatorName = '';
+for(let i = hacker2.length-1; i >= 0; i--) {
+    reverseNavigatorName += hacker2[i];
+}
+console.log(reverseNavigatorName);
+
+// 3.3 Depending on the lexicographic order of the strings, print appropriate message
+if(hacker1 < hacker2) {
+    console.log("The driver's name goes first.");
+}
+else if(hacker2 < hacker1) {
+    console.log("Yo, the navigator goes first definitely.");
+}
+else {
+    console.log("What?! You both have the same name?");
+}
