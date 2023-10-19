@@ -70,3 +70,25 @@ const latinWordCount = (text.match(/et/gi) || []).length;
 
 console.log(`Number of words in the Lorem Ipsum text: ${wordsCount}`);
 console.log(`Number of times the Latin word "et" appears: ${latinWordCount}`);
+
+// Bonus 2:
+// Function to check if a string is a palindrome
+function isPalindrome(str) {
+    // Remove non-alphanumeric characters and spaces and convert to lowercase
+    const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+    // Reverse the string
+    const reversedStr = cleanedStr.split("").reverse().join("");
+    
+    return cleanedStr === reversedStr;
+}
+
+const phraseToCheck = "A man, a plan, a canal, Panama!";
+const isPhrasePalindrome = isPalindrome(phraseToCheck);
+
+if(isPhrasePalindrome) {
+    console.log(`"${phraseToCheck}" is a palindrome.`);
+}
+else {
+    console.log(`"${phraseToCheck}" is not a palindrome.`);
+}
