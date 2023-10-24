@@ -39,9 +39,26 @@ else if (hacker1 < hacker2)
 else console.log("What?! You both have the same name?");
 
 // Bonus 2:
+const paragraph = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus risus at ultrices mi tempus. Imperdiet nulla malesuada pellentesque elit. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Nunc sed velit dignissim sodales ut eu sem integer. Nec nam aliquam sem et tortor consequat id. Morbi tristique senectus et netus et malesuada fames. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Semper auctor neque vitae tempus quam. Nulla posuere sollicitudin aliquam ultrices sagittis. Egestas integer eget aliquet nibh praesent. Eget felis eget nunc lobortis. Amet aliquam id diam maecenas ultricies mi eget mauris. Turpis nunc eget lorem dolor sed viverra.
+
+Convallis aenean et tortor at risus viverra adipiscing at. Viverra tellus in hac habitasse platea. Leo integer malesuada nunc vel. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Consectetur libero id faucibus nisl tincidunt eget nullam non. Donec enim diam vulputate ut pharetra sit amet aliquam id. Sit amet risus nullam eget felis eget. Nunc sed blandit libero volutpat sed cras. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Ut tristique et egestas quis. Velit dignissim sodales ut eu sem integer vitae justo eget. Arcu risus quis varius quam quisque id diam. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.
+
+Sed odio morbi quis commodo odio. Vivamus arcu felis bibendum ut tristique. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Id semper risus in hendrerit gravida. In nisl nisi scelerisque eu ultrices. Lectus proin nibh nisl condimentum id venenatis a condimentum. Donec enim diam vulputate ut pharetra sit amet. Massa id neque aliquam vestibulum morbi blandit cursus risus. Adipiscing elit pellentesque habitant morbi tristique senectus. Vestibulum rhoncus est pellentesque elit. Netus et malesuada fames ac turpis egestas sed. Ipsum consequat nisl vel pretium lectus quam. Quam quisque id diam vel quam elementum pulvinar etiam. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar.`;
+
+const wordToFind = "et";
+let count = 0;
+let cleanedParagraph = paragraph.split(" ");
+
+for (const word of cleanedParagraph) {
+  if (word === wordToFind) {
+    count++;
+  }
+}
+
+console.log(`The paragraph has ${count} of "${wordToFind}".`);
 
 // Bonus 3: Check palindromes
-const phraseToCheck = "stack cats";
+const phraseToCheck = "Was it a car or a cat I saw?";
 
 //convert word to array and clean it
 let phraseToClean = phraseToCheck.toLowerCase().split("");
