@@ -37,3 +37,22 @@ if (hacker1 > hacker2) console.log("The driver's name goes first.");
 else if (hacker1 < hacker2)
   console.log("Yo, the navigator goes first definitely.");
 else console.log("What?! You both have the same name?");
+
+// Bonus 2:
+
+// Bonus 3: Check palindromes
+const phraseToCheck = "stack cats";
+
+//convert word to array and clean it
+let phraseToClean = phraseToCheck.toLowerCase().split("");
+
+for (let i = 0; i < phraseToClean.length; i++) {
+  if (phraseToClean[i] < "a" || phraseToClean[i] > "z") phraseToClean[i] = "";
+}
+let cleanPhrase = phraseToClean.join("");
+let reverseCleanWord = phraseToClean.reverse().join("");
+
+// check if the word is a palindrome
+if (reverseCleanWord === cleanPhrase)
+  console.log(phraseToCheck + " is a palindrome.");
+else console.log(phraseToCheck + " is not a palindrome.");

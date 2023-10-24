@@ -164,7 +164,6 @@ Go to [lorem ipsum generator](http://www.lipsum.com/) and:
 - Make your program count the number of words in the string.
 
 - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
-
   
 
 #### Bonus 2:
