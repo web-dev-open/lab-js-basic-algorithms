@@ -111,7 +111,7 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
 
 1.2 Print `"The driver's name is XXXX"`.<br>
 
-1.3 Create a variable `hacker2` with the navigator's name.<br>
+1.3 Create a variable `hacker2`E with the navigator's name.<br>
 
 1.4 Print `"The navigator's name is YYYY"`.
 
@@ -164,7 +164,6 @@ Go to [lorem ipsum generator](http://www.lipsum.com/) and:
 - Make your program count the number of words in the string.
 
 - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
-
   
 
 #### Bonus 2:
