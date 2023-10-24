@@ -111,7 +111,7 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
 
 1.2 Print `"The driver's name is XXXX"`.<br>
 
-1.3 Create a variable `hacker2` with the navigator's name.<br>
+1.3 Create a variable `hacker2`E with the navigator's name.<br>
 
 1.4 Print `"The navigator's name is YYYY"`.
 
