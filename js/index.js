@@ -16,3 +16,10 @@ else if (hacker2.length > hacker1.length) {
 }
  
 // Iteration 3: Loops
+let myname = "JOHN";
+let reversename = "";
+for (let i = myname.length - 1; i >= 0; i--) {
+    reversename += myname[i];
+}
+console.log(reversename);
+// 
