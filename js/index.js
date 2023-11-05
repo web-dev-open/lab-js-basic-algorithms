@@ -36,5 +36,8 @@ else{
  }
 
  //bonus 1
-     var string="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, et laborum. Soluta veritatis doloribus, unde delectus blanditiis mollitia doloremque expedita exercitationem, consequatur error autem? Adipisci temporibus libero quisquam velit consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, et laborum. Soluta veritatis doloribus, unde delectus blanditiis mollitia doloremque expedita exercitationem, consequatur error autem? Adipisci temporibus libero quisquam velit consectetur.";
-     console.log(string.count());
+     var string="lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate dolore qui ut. Fuga ipsa quasi nostrum sapiente molestias quos similique voluptatibus, quaerat provident eveniet error totam illo, aliquid quidem? ";
+//      console.log(string.trim);
+  const tstring=string.trim();
+    const sstring=tstring.split(/\s+/);
+    console.log(sstring.length);
