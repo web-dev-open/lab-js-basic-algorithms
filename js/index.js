@@ -1,7 +1,7 @@
  // Iteration 1: Names and Input
-const hacker1=`Sam`;
+ const hacker1=`Lovely`;
 console.log(`The Driver's name is ${hacker1}. `);
-const hacker2=`Ronny`;
+  const hacker2=`Mohit`;
 console.log(` The Navigator's name is ${hacker2}.`);
 // Iteration 2: Conditionals
 if(hacker1.length > hacker2.length){
@@ -14,3 +14,27 @@ else{
         console.log(`Wow, you both have equally long names, ${hacker2.length}   characters!`);
 }
 // Iteration 3: Loops
+//convert the name to uppercase
+ const upperCase=hacker1.toUpperCase();
+ const character=upperCase.split("");
+ const formattedName=character.join(" ");
+ console.log(formattedName);
+
+ //printing in reverse order
+ for(var i=hacker1.length-1;i>=0;i--){
+        console.log(hacker1[i]);
+ }
+ //lexicographic order
+ if(hacker1<hacker2){
+        console.log("The driver's name goes first.");
+ }
+ else if(hacker1>hacker2){
+        console.log("Yo, the navigator goes first definitely.");
+ }
+ else{
+        console.log("What?! You both have the same name?");
+ }
+
+ //bonus 1
+     var string="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, et laborum. Soluta veritatis doloribus, unde delectus blanditiis mollitia doloremque expedita exercitationem, consequatur error autem? Adipisci temporibus libero quisquam velit consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, et laborum. Soluta veritatis doloribus, unde delectus blanditiis mollitia doloremque expedita exercitationem, consequatur error autem? Adipisci temporibus libero quisquam velit consectetur.";
+     console.log(string.count());
