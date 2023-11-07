@@ -36,8 +36,23 @@ else{
  }
 
  //bonus 1
-     var string="lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate dolore qui ut. Fuga ipsa quasi nostrum sapiente molestias quos similique voluptatibus, quaerat provident eveniet error totam illo, aliquid quidem? ";
-//      console.log(string.trim);
+     var string="lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate dolore qui ut. Fuga ipsa quasi nostrum sapiente molestias quos similique voluptatibus, quaerat provident eveniet error totam illo, aliquid quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate dolore qui ut. Fuga ipsa quasi nostrum sapiente molestias quos similique voluptatibus, quaerat provident eveniet error totam illo, aliquid quidem? ";
+//      
   const tstring=string.trim();
     const sstring=tstring.split(/\s+/);
     console.log(sstring.length);
+
+    const inputString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum etiam";
+const latinWordToCount = "Lorem";
+const wordArray = inputString.split(/\s+/);
+
+let latinWordCount = 0;
+
+for (const word of wordArray) {
+  if (word === latinWordToCount) {
+    latinWordCount++;
+  }
+}
+
+console.log(`Number of occurrences of "${latinWordToCount}": ${latinWordCount}`);
+
