@@ -1,3 +1,0 @@
-2023.11.09 00:35:30 INFO  Started: Metals version 1.1.0 in folders '/home/priyo/files/Projects/lab-js-basic-algorithms' for client Visual Studio Code 1.84.1.
-2023.11.09 00:35:33 WARN  Build server is not auto-connectable.
-2023.11.09 00:35:33 WARN  no build tool detected in workspace '/home/priyo/files/Projects/lab-js-basic-algorithms'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
