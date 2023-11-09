@@ -51,7 +51,18 @@ else {
 
 //Bonus1
 
-var lorem = `Nostrud ullamco veniam amet nulla nostrud sint ipsum ex aliqua veniam dolore in eu. Esse aute nostrud ullamco est consectetur laboris ut magna culpa non sit laboris in. Sint id non et ea deserunt laborum. Eu deserunt commodo ut reprehenderit magna aliquip ut sunt ad commodo eiusmod. Ad ad officia officia id qui sint labore Lorem cillum eiusmod.
+var lorem = `Nostrud ullamco veniam amet nulla  nostrud sint ipsum ex aliqua veniam dolore in eu. Esse aute nostrud ullamco est consectetur laboris ut magna culpa non sit laboris in. Sint id non et ea deserunt laborum. Eu deserunt commodo ut reprehenderit magna aliquip ut sunt ad commodo eiusmod. Ad ad officia officia id qui sint labore Lorem cillum eiusmod.
 Amet elit id tempor dolore nisi qui magna pariatur nisi id deserunt reprehenderit. Esse ut fugiat nostrud fugiat do excepteur laborum dolore mollit nulla tempor dolor. Consectetur nulla consequat incididunt in nostrud non ut do est anim officia. Eu veniam et et esse aliquip sit ipsum. Eu ad veniam eu cillum est.
 Ut tempor nulla officia do id exercitation pariatur cupidatat labore Lorem id occaecat. Lorem quis ipsum est elit minim velit velit. Et fugiat proident aliquip sit tempor ut est ipsum ad elit non incididunt duis cupidatat. Ex incididunt minim sunt ad aliquip nisi ut id ullamco. Exercitation aliquip nostrud occaecat mollit eiusmod officia aliqua.`
+
+
+var words = lorem.split(/\s+/).length;
+
+var etcount = lorem.split(/\s+/).filter(word => word === "et").length;
+
+
+// Output the results
+console.log(`Number of words in string: ${words}`);
+console.log(`Number of times latin word "et" appears: ${etcount}`);
+
 
