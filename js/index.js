@@ -1,55 +1,80 @@
-// Iteration 1: Names and Input
+//Iteration 1: Names and Input
 //
-let driver = "hacker1"
+let hacker1='Aditya';
+let hacker2='Dumble';
 
-let navigator = "hacker2"
+console.log(`The driver's name is ${hacker1}`);
+console.log(`The navigator's name is ${hacker2}`);
 
-console.log("The driver's name is " + driver)
-console.log("The navigator's name is " + navigator)
+
 
 // Iteration 2: Conditionals
-let len1 = driver.length
-let len2 = navigator.length
+let hacker1Count = hacker1.length;
+let hacker2Count = hacker2.length;
+if( hacker1Count > hacker2Count )
+   console.log(`The driver has the longest name, it has ${hacker1Count} characters`);
+else if( hacker2Count > hacker1Count )
+   console.log(`It seems that the navigator has the longest name, it has ${hacker2Count} characters`);
+else 
+  console.log(`Wow, you both have eually long names, ${hacker1Count} characters`);
 
-if (len1 > len2)
-{
-    console.log("The driver has the longest name, it has " + len1 + " characters.")
-} else if (len1 == len2) {
-    console.log("Wow, you both have equally long names, " + len1 + " characters!.")
-} else {
-    console.log("It seems that the navigator has the longest name, it has " + len2 + " characters.")
-}
 
 
 // Iteration 3: Loops
-console.log(driver.toUpperCase())
-console.log(driver.split(""))
-
-function reverseString(str) {
-    if (str === "")
-      return "";
-    else
-      return reverseString(str.substr(1)) + str.charAt(0);
-  }
-  reverseString(navigator);
+let name='';
+for(let i=0; i < hacker1Count ; i++)   //loop to iterate through each character one by one
+   name+=hacker1.charAt(i).toUpperCase()+' ';
+name.trim();    // to remove the whitespace at the end of string
+console.log(name);
 
 
-  //Bonas Tasks
+let rev_name='';
+for(let j=hacker2Count-1 ; j>=0 ;j--)
+    rev_name+=hacker2.charAt(j);
+console.log(rev_name);
 
-  // program to check if the string is palindrome or not
+let compare=hacker1.localeCompare(hacker2)
+if(compare > 0)
+   console.log("The driver's name goes first.")
+else if(compare < 0 )
+   console.log("Yo, the navigator goes first definitely.")
+else 
+   console.log("What?! You both have the same name?")
 
-function phraseToCheck(string) {
 
-    const len = string.length;
 
-    for (let i = 0; i < len / 2; i++) {
-
-        if (string[i] !== string[len - 1 - i]) {
-            return 'It is not a palindrome';
-        }
-    }
-    return 'It is a palindrome';
+//    BONUS 1
+let para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+let words=0;
+for(let i=0;i<para.length;i++)
+{
+   if(para.charAt(i)==' ')
+      words+=1;
 }
-const string = prompt('Enter a string: ');
-const value = phraseToCheck(string);
-console.log(value);
+words+=1;   //number of words is one greater than number of spaces in a string
+console.log("Number of words in paragraph "+words)
+
+let regexp=new RegExp('et','g');      //make a regular expression
+let count= para.match(regexp)
+if(count == null)
+   console.log('et does not occur in paragraph')
+else
+   console.log(`et occurs ${count.length} times in paragraph`)
+
+
+
+//    BONUS 2
+let phraseToCheck='Amor roma'
+let string1=''
+let string2=''
+for(let i=0;i<phraseToCheck.length;i++)
+{
+   let ch=phraseToCheck.charAt(i).toLowerCase();
+   if(ch>='a' && ch<='z') 
+   {
+      string1+=ch;
+      string2=ch+string2;
+   }
+}
+if(string1 === string2)
+   console.log(`${phraseToCheck} is a Palindrome`);
