@@ -66,7 +66,7 @@ let wordCount = 0;
 let etCount = 0;
 
 let splitPara = para.split(' ');
-    console.log(splitPara)
+console.log(splitPara)
 
 for (let i=0; i < splitPara.length; i++) {
     if(splitPara[i].includes('\n')) {
@@ -87,8 +87,8 @@ string = phraseToCheck.replace(/[ ,!.?]/g, "").toLowerCase();
 let reversedString = string.split('').reverse().join('');
 
 if (string === reversedString) {
-console.log('String is a palindrome');
+    console.log('String is a palindrome');
 }
 else {
-console.log('Not a palindrome');
+    console.log('Not a palindrome');
 }   
