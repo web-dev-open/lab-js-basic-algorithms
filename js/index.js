@@ -67,3 +67,31 @@ console.log("Number of occurrences of 'et':", etCount2);
 
 const etCount3 = (para3.match(/\bet\b/g) || []).length;
 console.log("Number of occurrences of 'et':", etCount3);
+
+//Bonus 2
+function isPalindrome(str) {
+    
+    const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+    
+    return cleanedStr === cleanedStr.split('').reverse().join('');
+  }
+  
+  const phraseToCheck1 = "A man, a plan, a canal, Panama!";
+  const phraseToCheck2 = "Amor, Roma";
+  const phraseToCheck3 = "race car";
+  const phraseToCheck4 = "stack cats";
+  const phraseToCheck5 = "step on no pets";
+  const phraseToCheck6 = "taco cat";
+  const phraseToCheck7 = "put it up";
+  const phraseToCheck8 = "Was it a car or a cat I saw?";
+  const phraseToCheck9 = "No 'x' in Nixon";
+  
+  console.log(isPalindrome(phraseToCheck1)); 
+  console.log(isPalindrome(phraseToCheck2)); 
+  console.log(isPalindrome(phraseToCheck3)); 
+  console.log(isPalindrome(phraseToCheck4)); 
+  console.log(isPalindrome(phraseToCheck5)); 
+  console.log(isPalindrome(phraseToCheck6)); 
+  console.log(isPalindrome(phraseToCheck7)); 
+  console.log(isPalindrome(phraseToCheck8)); 
+  console.log(isPalindrome(phraseToCheck9)); 
