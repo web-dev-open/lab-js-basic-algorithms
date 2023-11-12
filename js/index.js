@@ -25,8 +25,8 @@ let driverName="";
 for(let i=0; i<hacker1.length; i++){
     driverName+=hacker1[i].toUpperCase()+" ";
 }
-//Just Removing the space after last character by using slice(0,-1)
-console.log(driverName.slice(0,-1));
+//Using trim() to remove trailing white space
+console.log(driverName.trim());
 
 let navigatorName="";
 for(let i=hacker2.length-1; i>=0; i--){
