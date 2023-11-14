@@ -56,3 +56,19 @@ else {
         console.log(`${hacker1[i]} `);
     }
 }
+
+// Bonus Activity 1
+
+let loremIpsumText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum, turpis vel lacinia tristique, orci ex vestibulum ex, at cursus massa est a nulla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+
+// Using Built In Function
+// let totalWords = getWordCount(loremIpsumText);
+// console.log(`Total Number of Words in Lorem Ipsum Text String are ${totalWords}.`);
+
+let totalWords = 0;
+for (let i = 0; i < loremIpsumText; i += 1) {
+    if (loremIpsumText[i] == ' ') {
+        totalWords += 1;
+    }
+}
+console.log(`Total Number of Words in Lorem Ipsum Text String are ${totalWords}.`);
