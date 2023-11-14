@@ -66,9 +66,40 @@ let loremIpsumText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. I
 // console.log(`Total Number of Words in Lorem Ipsum Text String are ${totalWords}.`);
 
 let totalWords = 0;
-for (let i = 0; i < loremIpsumText; i += 1) {
+for (let i = 0; i < loremIpsumText.length(); i += 1) {
     if (loremIpsumText[i] == ' ') {
         totalWords += 1;
     }
 }
 console.log(`Total Number of Words in Lorem Ipsum Text String are ${totalWords}.`);
+
+// Bonus Activity 2
+
+let pharaseToCheck = "A man, a plan, a canal, Panama!";
+pharaseToCheck = toLowerCase(pharaseToCheck);
+
+let i = 0;
+let j = pharaseToCheck.length();
+
+while (i < j) {
+    if (pharaseToCheck[i] == pharaseToCheck[j]) {
+        i += 1;
+        j += 1;
+    }
+
+    else if (pharaseToCheck[i] == ',' || pharaseToCheck[i] == '!'
+        || pharaseToCheck[i] == '.' || pharaseToCheck[i] == ' ') {
+        i += 1;
+    }
+    else if (pharaseToCheck[j] == ',' || pharaseToCheck[j] == '!'
+        || pharaseToCheck[j] == '.' || pharaseToCheck[j] == ' ') {
+        j += 1;
+    }
+}
+
+if (i == j) {
+    console.log(`String is Palindromic.`)
+}
+else {
+    console.log(`String is Palindromic.`)
+}
