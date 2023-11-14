@@ -24,3 +24,35 @@ else {
 }
 
 // Iteration 3: Loops
+
+if (driversNameLength > navigatorNamesLength) {
+    hacker1 = toUpperCase(hacker1);
+    for (let i = driversNameLength; i > 0; i -= 1) {
+        console.log(`${hacker1[i]} `);
+    }
+    hacker2 = toLowerCase(hacker2);
+    for (let i = 0; i < navigatorNamesLength; i += 1) {
+        console.log(hacker2[i]);
+    }
+}
+else if (driversNameLength === navigatorNamesLength) {
+    hacker1 = toUpperCase(hacker1);
+    for (let i = driversNameLength; i > 0; i -= 1) {
+        console.log(`${hacker1[i]} `);
+    }
+    hacker2 = toLowerCase(hacker2);
+    for (let i = 0; i < navigatorNamesLength; i += 1) {
+        console.log(hacker2[i]);
+    }
+}
+
+else {
+    hacker2 = toLowerCase(hacker2);
+    for (let i = 0; i < navigatorNamesLength; i += 1) {
+        console.log(hacker2[i]);
+    }
+    hacker1 = toUpperCase(hacker1);
+    for (let i = driversNameLength; i > 0; i -= 1) {
+        console.log(`${hacker1[i]} `);
+    }
+}
