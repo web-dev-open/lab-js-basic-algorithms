@@ -42,3 +42,16 @@ for (let i in words) {
   }
 }
 console.log(`Number of occurrences of the word "et": ${etCount}`);
+
+//bonus2
+let phraseToCheck = "race car";
+let joinPhrase = phraseToCheck.split(" ").join("");
+console.log(joinPhrase);
+let reversedPhrase = joinPhrase.split("").reverse().join("");
+console.log(reversedPhrase);
+
+if (joinPhrase === reversedPhrase) {
+  console.log(`"${phraseToCheck}" is a palindrome.`);
+} else {
+  console.log(`"${phraseToCheck}" is not a palindrome.`);
+}
