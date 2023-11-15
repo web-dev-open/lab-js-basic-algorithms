@@ -73,6 +73,15 @@ for (let i = 0; i < loremIpsumText.length(); i += 1) {
 }
 console.log(`Total Number of Words in Lorem Ipsum Text String are ${totalWords}.`);
 
+let wordshavinget = 0;
+for (let i = 0, j = 1; j < loremIpsumText; i += 1, j += 1) {
+    if (loremIpsumText[i] == 'e' && loremIpsumText[j] == 't') {
+        wordshavinget += 1;
+    }
+}
+console.log(`Total Number of Words in Lorem Ipsum Text having et are ${wordshavinget}.`);
+
+
 // Bonus Activity 2
 
 let pharaseToCheck = "A man, a plan, a canal, Panama!";
