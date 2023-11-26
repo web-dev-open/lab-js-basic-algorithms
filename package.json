@@ -1,0 +1,12 @@
+{
+  "name": "lab-js-basic-algorithms",
+  "version": "1.0.0",
+  "description": "<img src=\"https://imgur.com/XOS1Vdh.png\"  width=\"150px\" height=\"150px\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
