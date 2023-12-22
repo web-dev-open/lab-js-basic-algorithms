@@ -53,9 +53,9 @@ else{
     }
     console.log(navigatorName);
     /*
-        3.3 Depending on the lexicographic order of the strings, print: <br>
-        - `The driver's name goes first.`  <br>
-        - `Yo, the navigator goes first definitely.`  <br>
+        3.3 Depending on the lexicographic order of the strings, print: 
+        - `The driver's name goes first.` 
+        - `Yo, the navigator goes first definitely.`  
         - `What?! You both have the same name?`
     */
     driver = hacker1.toLowerCase();
