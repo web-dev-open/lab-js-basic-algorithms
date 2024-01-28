@@ -47,4 +47,3 @@ for(let i = 0; i < string.split(' ').length; i++) {
     if('et' in string.split(' ')[i])
     countLa ++;
 }
-console.log(countLa);
