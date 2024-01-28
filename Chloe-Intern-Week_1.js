@@ -44,6 +44,21 @@ console.log(wordsCount());
 
 let countLa = 0;
 for(let i = 0; i < string.split(' ').length; i++) {
-    if('et' in string.split(' ')[i])
+    if(string.split(' ')[i].match("et"))
     countLa ++;
 }
+console.log(countLa);
+
+// Bonus 2
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+
+function isPalindrome(phrase) {
+    let plainPhrase = phrase.toLowerCase().replace(/[^a-z0-9]/g, '');
+    let rePhrase = plainPhrase.split('').reverse().join('');
+    if(plainPhrase === rePhrase) {
+        console.log("It is a palindrome.");
+    } else {
+        console.log("It is not a palindrome.");
+    }
+}
+isPalindrome(phraseToCheck);
