@@ -17,4 +17,11 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
-
+for (var i = 0; i < hacker1.length; i++) {
+    console.log(hacker1[i].toUpperCase());
+}
+var reversedName = "";
+for (var i = hacker2.length - 1; i >= 0; i--) {
+    reversedName += hacker2[i];
+}
+console.log(reversedName);
